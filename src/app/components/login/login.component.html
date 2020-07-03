@@ -1,0 +1,57 @@
+<!--Section: Live preview-->
+<section class="form-dark">
+
+  <!--Form without header-->
+  <div class="card card-image" style="background-image: url('https://i.pinimg.com/736x/6d/77/b3/6d77b338f32b8fd856ff7fd50d95bdd4.jpg'); width: 28rem;">
+    <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-4">
+
+      <!--Header-->
+      <div class="text-center">
+        <h3 class="white-text mb-5 mt-4 font-weight-bold">
+          <strong>INICIAR</strong>
+          <a class="blue-text font-weight-bold">
+            <strong> SESIÓN</strong>
+          </a>
+        </h3>
+      </div>
+
+      <!--Body-->
+      <form [formGroup]="darkForm">
+
+
+        <div class="md-form">
+          <input type="text" id="darkFormEmailEx" class="form-control white-text" formControlName="darkFormEmailEx" [(ngModel)]="email" mdbInput>
+          <label for="darkFormEmailEx">Correo Electrónico</label>
+        </div>
+
+        <div class="md-form pb-3">
+          <input type="password" id="darkFormPasswordEx" class="form-control white-text" formControlName="darkFormPasswordEx" [(ngModel)]="password" mdbInput>
+          <label for="darkFormPasswordEx">Contraseña</label>
+        </div>
+      </form>
+
+      <!--Grid row-->
+      <div class="row d-flex align-items-center mb-4">
+
+        <!--Grid column-->
+        <div class="text-center mb-3 col-md-12">
+          <button type="button" mdbBtn color="primary" block="true" (click)="logIn()" rounded="true" class="z-depth-1 waves-light" mdbWavesEffect>Ingresar</button>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+
+      <!--Grid column-->
+      <div class="col-md-12">
+        <p class="font-small white-text d-flex justify-content-end">Aún no tienes una cuenta?
+          <a href="#" class="blue-text ml-1 font-weight-bold" [routerLink] = "'/register'"> Registrate</a>
+        </p>
+      </div>
+      <!--Grid column-->
+
+    </div>
+  </div>
+  <!--/Form without header-->
+
+</section>
+<!--Section: Live preview-->
